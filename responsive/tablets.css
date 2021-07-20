@@ -1,0 +1,7 @@
+@media(max-width: 768px) {
+	.kotak-login {
+		width: 30em;
+		position: absolute;
+		left: 0;
+	}
+}

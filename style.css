@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+.kotak-login {
+	width: 40em;
+	height: 30em;
+	margin: 70px auto;
+	display: flex;
+	box-shadow: 0px 0px 6px -1px black;
+	overflow: hidden;
+}
+
+/*TOMBOL ATAU*/
+
+.link-atau button {
+	padding: 10px;
+	height: 50px;
+	border-radius: 100%;
+	border: none;
+	outline: none;
+	box-shadow: 2px 0px 7px -4px black;
+	position: absolute;
+	right: -30px;
+	top: 200px;
+	background-color: white;
+	cursor: pointer;
+	z-index: 99;
+	transition: .4s;
+}
+.link-atau button:hover {
+	background-color: black;
+	color: #fff;
+}
+.kotak-login .tmbl {
+	opacity: 0;
+}
+/*akhir atau*/
+
+/*kolom registrasi*/
+.registrasi {/*
+	border: 1px solid black;*/
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.registrasi form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+/*judul registrasi*/
+.jdl-rgistrasi {
+	position: absolute;
+	top: 70px;
+	font-family: arial;
+	color: gray;
+}
+/*akhir judul*/
+
+	/*inputan registrasi*/
+	.registrasi input {
+		border: none;
+		outline: none;
+		border-bottom: 1px solid gray;
+		font-size: 20px;
+		margin-top: 30px;
+		width: 250px;
+	}
+	/*akhir inputan*/
+
+	/*tombol registrasi*/
+	.link-tmbl {
+		position: absolute;
+		bottom: 100px;
+	}
+	.link-tmbl button{
+		padding: 10px;
+		width: 100px;
+		border-radius: 20px;
+		border: none;
+		outline: none;
+		background-color: #3232fa;
+		cursor: pointer;
+		transition: .4s;
+		color: white;
+	}
+	.link-tmbl:hover button {
+		background-color: #1414E8;
+		color: #E1E1E1;
+	}
+	/*akhir tombol*/
+/*akhir dari regiistrasi*/
+
+.login {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.login img {
+	margin-left: -10px;
+	width: 350px;
+	height: 500px;
+}
+/*judul-login*/
+.judul-login {
+	position: absolute;
+	top: 70px;
+}
+.judul-login h2 {
+	text-align: center;
+	font-family: arial;
+	color: gray;
+}
+/*akhir judul*/
+
+/*facebook*/
+.link-facebook, .link-google, .link-twitter {
+	text-decoration: none;
+	font-family: arial;
+	position: absolute;
+	left: 0;
+	color: black;
+}
+.facebook, .google, .twitter {
+	width: 230px;
+	height: 40px;
+	background-color: #074EE9;
+	position: absolute;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 10px;
+	left: 40px;
+	top: 170px;
+	border-radius: 3px;
+	transition: .4s;
+}
+.fb-icon, .tw-icon {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+}
+.facebook:hover {
+	color: #F0F0F0;
+}
+
+/*google*/
+.google {
+	top: 230px;
+	background-color: #DBDBDB;
+	color: #807E7E;
+}
+.google img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 10px !important;
+	filter: brightness(0);
+	transition: .4s;
+}
+.google:hover {
+	color: black;
+	background-color: #ECEAEA;
+}
+.google:hover img {
+	filter: brightness(100%);
+}
+
+/*twitter*/
+.twitter {
+	top: 290px;
+	background-color: #1c84c5;;
+}
+.twitter:hover {
+	background-color: #1DA1F2;
+	color: white;
+}

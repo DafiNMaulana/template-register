@@ -1,0 +1,64 @@
+@media (max-width: 660px) {
+
+	/*container*/
+	.kotak-login {
+		left: 0;
+		right: 0;
+		width: 20em !important;
+		display: flex;
+		overflow: hidden;
+		position: absolute;
+	}
+		
+	.link-atau {
+		text-decoration: none;
+		color: black;
+		font-family: arial;
+		font-size: 15px;
+		z-index: 9999;
+		transition: .4s;
+	}
+	.kotak-login .tmbl {
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		z-index: 999999;
+		width: 45px;
+		height: 45px;
+		opacity: 0;
+		cursor: pointer;
+	}
+	.kotak-login .tmbl:checked ~ .login {
+		margin-right: 495px;
+	}
+	.kotak-login .tmbl:checked ~ .registrasi .link-atau > button {
+		background-color: black;
+		color: white;
+	}
+	/*akhir container*/
+
+	/*registrasi*/
+	.registrasi {
+		width: 100%;
+		height: 500px;
+		position: absolute;
+	}
+	/*akhir registrasi*/
+
+	/*login*/
+	.login {
+		z-index: 999;
+		right: -500px;
+		width: 100%;
+		transition: .8s;
+		position: absolute;
+	}
+	/*akhir login*/
+
+	/*button atau*/
+	.link-atau button {
+		top: 0;
+		right: 0;
+	}
+	/*akhir atau*/
+}
